@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #1c78ce;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(19, 96, 184, 0.253);
+    width: 400px;
+}
+
+input {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #5C9E5E;
+}
+
+#password-strength-meter {
+    height: 20px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#strength-bar {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#password-strength-status {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+#password-requirements {
+    display: none;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+#password-requirements ul {
+    padding-left: 20px;
+}
+
+#password-requirements li {
+    margin: 5px 0;
+    color: #999;
+}
+
+#password-requirements .complete {
+    color: green;
+}
+
+#password-requirements .incomplete {
+    color: red;
+}
+
+#password-strength-status {
+    font-size: 18px;
+}
